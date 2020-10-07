@@ -14,3 +14,4 @@
 * [Кун](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/kuhn.cpp)
 * [LCA двоичный подъем](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/lca_binary_lifting.cpp)
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
+# Разное
