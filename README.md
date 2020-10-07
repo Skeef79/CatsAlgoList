@@ -15,5 +15,6 @@
 * [LCA двоичный подъем](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/lca_binary_lifting.cpp)
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
+* [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
 # Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
