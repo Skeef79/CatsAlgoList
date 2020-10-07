@@ -24,7 +24,7 @@
 #include<random>
 #include<numeric>
 
-//by Skeef79
+//by CatsRuleTheWorld
 
 typedef long long ll;
 typedef long double ld;
