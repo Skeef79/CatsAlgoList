@@ -1,2 +1,3 @@
 # AlgoList2020
-Алгосики
+## Template
+* [Template](https://github.com/Skeef79/AlgoList2020/blob/main/template.cpp)
