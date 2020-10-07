@@ -1,7 +1,8 @@
 # AlgoList2020
 ## Template
 * [Template](https://github.com/Skeef79/AlgoList2020/blob/main/template.cpp)
-## Структуры
+## Структуры данных
+* [Sparce table](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/sparce_table.cpp)
 ## Теория чисел
 ## Строки
 ## Графы
