@@ -15,3 +15,4 @@ vector<int> zf(string s)
 	}
 	return z;
 }
+kek
