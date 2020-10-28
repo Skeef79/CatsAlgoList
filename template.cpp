@@ -23,6 +23,7 @@
 #include<sstream>
 #include<random>
 #include<numeric>
+#include<memory.h>
 
 //by CatsRuleTheWorld
 
@@ -54,13 +55,6 @@ template<typename T> void print(vector<T>& a)
 	cout << en;
 }
 
-template<typename T> void print(deque<T>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-		cout << a[i] << ' ';
-	cout << en;
-}
-
 template<typename T> void print(vector<vector<T>>& a)
 {
 	for (int i = 0; i < a.size(); i++)
@@ -72,12 +66,6 @@ template<typename T> void print(vector<vector<T>>& a)
 }
 
 template <typename T> void input(vector<T>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-		cin >> a[i];
-}
-
-template<typename T> void input(deque<T>& a)
 {
 	for (int i = 0; i < a.size(); i++)
 		cin >> a[i];
