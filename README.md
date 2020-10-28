@@ -3,6 +3,7 @@
 * [Template](https://github.com/Skeef79/AlgoList2020/blob/main/template.cpp)
 ## Структуры данных
 * [Sparce table](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/sparce_table.cpp)
+* [Очередь на минимум](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/min_queue.cpp)
 ## Теория чисел
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
