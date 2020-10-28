@@ -18,3 +18,4 @@
 * [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
 # Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
+* [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
