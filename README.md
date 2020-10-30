@@ -26,6 +26,7 @@
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
 * [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
+* [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
 # Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
