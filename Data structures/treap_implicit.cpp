@@ -1,20 +1,3 @@
-#define _USE_MATH_DEFINES
-#include<iostream>
-#include<string>
-#include<queue>
-#include<set>
-#include<unordered_set>
-#include<map>
-#include<unordered_map>
-#include<deque>
-#include<vector>
-#include<algorithm>
-#include<cmath>
-#include<fstream>
-using namespace std;
-#define for0(i, n) for(int i = 0; i < n; i++)
-#define for1(i, n) for(int i = 1; i <= n; i++)
-typedef long long ll;
 struct node {
 	ll x;
 	ll sum;
@@ -197,16 +180,3 @@ node* kth_node(node* root, int k) {
  
 }
  
-int main() {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	node * root = nullptr;
-	ll n, m;
-	cin >> n >> m;
-	for1(i, n) {
-		ll d;
-		cin >> d;
-		node * newnode = new node(d);
-		root = merge(root, newnode);
-	}
-  }
