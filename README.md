@@ -13,7 +13,7 @@
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
 * [Z функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/z_function.cpp)
-* [Суффиксное дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/z_function.cpp)
+* [Суффиксное дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/SuffixTree.cpp)
 ## Графы
 * [Мосты](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/bridges.cpp)
 * [Точки сочлинения](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/cut_points.cpp)
