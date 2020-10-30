@@ -31,6 +31,7 @@
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
 * [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
 * [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
+* [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 ## Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
