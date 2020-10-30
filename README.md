@@ -31,3 +31,6 @@
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
 * [Перебор всех подмасок и надмасок](https://github.com/Skeef79/AlgoList2020/blob/main/Other/iterate_submasks.cpp)
+
+# Теория игр
+* [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
