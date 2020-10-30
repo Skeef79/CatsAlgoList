@@ -1,6 +1,6 @@
-for (int m = 0; m < (1 << n); ++m)
+for (int mask = 0; mask < (1 << n); ++mask)
 {
-  for (int s = m; s; s = (s - 1)&m)
+  for (int s = mask; s; s = (s - 1)&mask)
   {
     //proceed s;		
   }
