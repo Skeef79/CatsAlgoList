@@ -10,6 +10,7 @@
 * [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
 
 ## Теория чисел
+* [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
 * [Z функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/z_function.cpp)
