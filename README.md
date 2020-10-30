@@ -8,9 +8,12 @@
 * [Декартово дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap.cpp)
 * [Декартово дерево по неявному ключу](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap_implicit.cpp)
 * [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
-
+# Геометрия
+* [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
+# Теория игр
+* [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
 * [Z функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/z_function.cpp)
@@ -32,5 +35,3 @@
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
 * [Перебор всех подмасок и надмасок](https://github.com/Skeef79/AlgoList2020/blob/main/Other/iterate_submasks.cpp)
 
-# Теория игр
-* [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
