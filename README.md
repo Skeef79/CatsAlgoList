@@ -5,6 +5,7 @@
 * [Sparce table](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/sparce_table.cpp)
 * [Очередь на минимум](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/min_queue.cpp)
 * [Персистентное дерево отрезков](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/persistent_segment_tree.cpp)
+* [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
 ## Теория чисел
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
