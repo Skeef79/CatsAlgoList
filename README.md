@@ -12,7 +12,8 @@
 * [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
-# Теория игр
+* [Функция Эйлера](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/euler_function.cpp)
+## Теория игр
 * [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
 ## Строки
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
