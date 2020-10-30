@@ -8,7 +8,7 @@
 * [Декартово дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap.cpp)
 * [Декартово дерево по неявному ключу](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap_implicit.cpp)
 * [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
-# Геометрия
+## Геометрия
 * [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
@@ -30,7 +30,7 @@
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
 * [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
 * [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
-# Разное
+## Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
 * [Перебор всех подмасок и надмасок](https://github.com/Skeef79/AlgoList2020/blob/main/Other/iterate_submasks.cpp)
