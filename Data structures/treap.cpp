@@ -1,28 +1,12 @@
-#include<iostream>
-#include<string>
-#include<queue>
-#include<set>
-#include<unordered_set>
-#include<map>
-#include<unordered_map>
-#include<deque>
-#include<vector>
-#include<algorithm>
-#include<cmath>
-#include<fstream>
-using namespace std;
-#define for0(i, n) for(int i = 0; i < n; i++)
-
 struct node {
-	int x;
-	int y;
-	long long sum;
+	ll x;
+	ll y;
+	ll sum;
 	int size;
 	node *left;
 	node *right;
 
-
-	node(int key = 0, int prior = (rand() << 16) + rand()) {
+	node(ll key = 0, ll prior = (rand() << 16) + rand()) {
 		x = key;
 		y = prior;
 		left = nullptr;
@@ -39,7 +23,7 @@ int get_size(node* root) {
 		return root->size;
 }
 
-long long get_sum(node* root) {
+ll get_sum(node* root) {
 	if (!root)
 		return 0;
 	else
@@ -51,8 +35,7 @@ void update(node *root) {
 	root->sum = get_sum(root->left) + get_sum(root->right) + root->x;
 }
 
-
-bool exist(node *root, int key) {
+bool exist(node *root, ll key) {
 	if (!root)
 		return false;
 	else if (root->x == key)
@@ -63,8 +46,7 @@ bool exist(node *root, int key) {
 		return exist(root->right, key);
 }
 
-
-pair<node*, node*> split(node* root, int key) {
+pair<node*, node*> split(node* root, ll key) {
 	if (!root)
 		return { nullptr, nullptr };
 	if (key > root->x) {
@@ -81,7 +63,7 @@ pair<node*, node*> split(node* root, int key) {
 	}
 }
 
-int kth(node* root, int k) {
+ll kth(node* root, int k) {
 	if (k <= get_size(root->left))
 		return kth(root->left, k);
 	else if (k == get_size(root->left) + 1)
@@ -122,35 +104,32 @@ node *erase(node *root, int key) {
 	return merge(res1.first, res2.second);
 }
 
-long long query_sum(node *root, int l, int r) {
+ll query_sum(node *root, int l, int r) {
 	if (r < l)
 		return 0;
 	auto res1 = split(root, l);
 	auto res2 = split(res1.second, r + 1);
-	long long ans = get_sum(res2.first);
+	ll ans = get_sum(res2.first);
 	root = merge(merge(res1.first, res2.first), res2.second);
 	return ans;
 }
-long long next(node *root, int x) {
+ll next(node *root, ll x) {
 	auto res = split(root, x + 1);
-	long long ans;
+	ll ans;
 	if (!res.second)
-		ans = -2000000000;
+		ans = -LINF;
 	else
 		ans = kth(res.second, 1);
 	root = merge(res.first, res.second);
 	return ans;
 }
-long long prev(node *root, int x) {
+ll prev(node *root, ll x) {
 	auto res = split(root, x);
-	long long ans;
+	ll ans;
 	if (!res.first)
-		ans = -2000000000;
+		ans = -LINF;
 	else
 		ans = kth(res.first, res.first->size);
 	root = merge(res.first, res.second);
 	return ans;
 }
-
-
-
