@@ -30,7 +30,8 @@
 * [LCA двоичный подъем](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/lca_binary_lifting.cpp)
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
-* [Эйлеров путь](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
+* [Эйлеров путь неоринтированный](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path.cpp)
+* [Эйлеров путь ориентированный]()
 * [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 ## Разное
