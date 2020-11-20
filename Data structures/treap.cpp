@@ -1,135 +1,108 @@
-struct node {
-	ll x;
-	ll y;
-	ll sum;
-	int size;
-	node *left;
-	node *right;
+ll bad = LINF;
 
-	node(ll key = 0, ll prior = (rand() << 16) + rand()) {
-		x = key;
-		y = prior;
-		left = nullptr;
-		right = nullptr;
-		size = 1;
-		sum = key;
+struct node
+{
+	ll x, y;
+	node* left;
+	node* right;
+	int cnt;
+	node(ll _x)
+	{
+		x = _x;
+		y = rand()*rand() + rand();
+		left = right = nullptr;
+		cnt = 1;
 	}
 };
 
-int get_size(node* root) {
-	if (!root)
-		return 0;
+int cnt(node* t)
+{
+	return t ? t->cnt : 0;
+}
+
+void upd_cnt(node* t)
+{
+	if (t)
+		t->cnt = 1 + cnt(t->left) + cnt(t->right);
+}
+
+node* merge(node * L, node* R)
+{
+	if (!L)
+		return R;
+	if (!R)
+		return L;
+	if (L->y > R->y)
+	{
+		L->right = merge(L->right, R);
+		upd_cnt(L);
+		return L;
+	}
 	else
-		return root->size;
+	{
+		R->left = merge(L, R->left);
+		upd_cnt(R);
+		return R;
+	}
 }
 
-ll get_sum(node* root) {
-	if (!root)
-		return 0;
-	else
-		return root->sum;
-}
-
-void update(node *root) {
-	root->size = 1 + get_size(root->left) + get_size(root->right);
-	root->sum = get_sum(root->left) + get_sum(root->right) + root->x;
-}
-
-bool exist(node *root, ll key) {
-	if (!root)
-		return false;
-	else if (root->x == key)
-		return true;
-	else if (key < root->x)
-		return exist(root->left, key);
-	else
-		return exist(root->right, key);
-}
-
-pair<node*, node*> split(node* root, ll key) {
-	if (!root)
+pair<node*, node*> split(node *t, ll x)
+{
+	if (!t)
 		return { nullptr, nullptr };
-	if (key > root->x) {
-		auto res = split(root->right, key);
-		root->right = res.first;
-		update(root);
-		return { root, res.second };
+	if (x > t->x)
+	{
+		auto res = split(t->right, x);
+		t->right = res.first;
+		upd_cnt(t);
+		return { t,res.second };
 	}
-	else {
-		auto res = split(root->left, key);
-		root->left = res.second;
-		update(root);
-		return { res.first, root };
-	}
-}
-
-ll kth(node* root, int k) {
-	if (k <= get_size(root->left))
-		return kth(root->left, k);
-	else if (k == get_size(root->left) + 1)
-		return root->x;
-	return kth(root->right, k - get_size(root->left) - 1);
-}
-
-node *merge(node* root1, node* root2) {
-	if (!root1)
-		return root2;
-	if (!root2)
-		return root1;
-	if (root1->y > root2->y) {
-		root1->right = merge(root1->right, root2);
-		update(root1);
-		return root1;
-	}
-	else {
-		root2->left = merge(root1, root2->left);
-		update(root2);
-		return root2;
-	}
-}
-
-node *add(node *root, int key) {
-	if (exist(root, key))
-		return root;
-	auto res = split(root, key);
-	node * newnode = new node(key);
-	return merge(merge(res.first, newnode), res.second);
-}
-
-node *erase(node *root, int key) {
-	if (!exist(root, key))
-		return root;
-	auto res1 = split(root, key);
-	auto res2 = split(res1.second, key + 1);
-	return merge(res1.first, res2.second);
-}
-
-ll query_sum(node *root, int l, int r) {
-	if (r < l)
-		return 0;
-	auto res1 = split(root, l);
-	auto res2 = split(res1.second, r + 1);
-	ll ans = get_sum(res2.first);
-	root = merge(merge(res1.first, res2.first), res2.second);
-	return ans;
-}
-ll next(node *root, ll x) {
-	auto res = split(root, x + 1);
-	ll ans;
-	if (!res.second)
-		ans = -LINF;
 	else
-		ans = kth(res.second, 1);
-	root = merge(res.first, res.second);
-	return ans;
+	{
+		auto res = split(t->left, x);
+		t->left = res.second;
+		upd_cnt(t);
+		return { res.first, t };
+	}
 }
-ll prev(node *root, ll x) {
-	auto res = split(root, x);
-	ll ans;
-	if (!res.first)
-		ans = -LINF;
+
+bool exist(node* t, ll  x)
+{
+	if (!t)
+		return false;
+	if (x == t->x)
+		return true;
+	if (x > t->x)
+		return exist(t->right, x);
 	else
-		ans = kth(res.first, res.first->size);
-	root = merge(res.first, res.second);
-	return ans;
+		return exist(t->left, x);
+}
+
+node* insert(node* t, ll x)
+{
+	if (exist(t, x))
+		return t;
+
+	auto res = split(t, x);
+	return merge(merge(res.first, new node(x)), res.second);
+}
+
+node* erase(node *t, ll x)
+{
+	if (!exist(t, x))
+		return t;
+	auto res = split(t, x);
+	return merge(res.first, split(res.second, x + 1).second);
+}
+
+ll kth(node *t, int k)
+{
+	if (!t)
+		return bad;
+	if (k == cnt(t->left))
+		return t->x;
+	if (cnt(t->left) > k)
+		return kth(t->left, k);
+	else
+		return kth(t->right, k - cnt(t->left) - 1);
 }
