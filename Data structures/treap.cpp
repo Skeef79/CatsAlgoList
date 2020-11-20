@@ -95,6 +95,7 @@ node* erase(node *t, ll x)
 	return merge(res.first, split(res.second, x + 1).second);
 }
 
+//k - с нуля
 ll kth(node *t, int k)
 {
 	if (!t)
