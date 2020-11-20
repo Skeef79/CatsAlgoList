@@ -20,7 +20,7 @@ int cnt(node* t)
 	return t ? t->cnt : 0;
 }
 
-void upd_cnt(node* t)
+void update(node* t)
 {
 	if (t)
 		t->cnt = 1 + cnt(t->left) + cnt(t->right);
@@ -35,13 +35,13 @@ node* merge(node * L, node* R)
 	if (L->y > R->y)
 	{
 		L->right = merge(L->right, R);
-		upd_cnt(L);
+		update(L);
 		return L;
 	}
 	else
 	{
 		R->left = merge(L, R->left);
-		upd_cnt(R);
+		update(R);
 		return R;
 	}
 }
@@ -54,14 +54,14 @@ pair<node*, node*> split(node *t, ll x)
 	{
 		auto res = split(t->right, x);
 		t->right = res.first;
-		upd_cnt(t);
+		update(t);
 		return { t,res.second };
 	}
 	else
 	{
 		auto res = split(t->left, x);
 		t->left = res.second;
-		upd_cnt(t);
+		update(t);
 		return { res.first, t };
 	}
 }
