@@ -1,5 +1,6 @@
 ll bad = LINF;
 
+//x попадает в правое поддерево
 struct node
 {
 	ll x, y;
