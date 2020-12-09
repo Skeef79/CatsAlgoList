@@ -30,10 +30,10 @@ struct sparceTable
 	}
 
 	sparceTable() {}
-	
-	sparceTable(vector<int>&a, function<int(int, int)>_f) 
-	{ 
-		init(a, _f); 
+
+	sparceTable(vector<int>&a, function<int(int, int)>_f)
+	{
+		init(a, _f);
 	}
 
 	int get(int l, int r)
@@ -97,37 +97,6 @@ struct suffixArray
 			for (int i = 0; i < n; i++)
 				pos[suffix[i]] = i;
 		}
-	}
-
-	//returns 2 if t<suff[pos], 1 is t==suff[pos], else 0
-	int cmpStrings(int pos, string &t)
-	{
-		for (int i = 0; i < min(n - pos, (int)t.size()); i++)
-			if (t[i] != s[pos + i])
-				if (t[i] < s[pos + i])
-					return 2;
-				else
-					return 0;
-
-		if (t.length() > n - pos)
-			return 0;
-
-		return 1;
-	}
-
-	//returns first occurrence of the string t, else - 1;
-	int find(string &t)
-	{
-		int l = 0, r = n - 1;
-		while (r - l > 1)
-		{
-			int m = (l + r) / 2;
-			if (cmpStrings(suffix[m], t))
-				r = m;
-			else
-				l = m;
-		}
-		return cmpStrings(suffix[r], t) == 1 ? suffix[r] : -1;
 	}
 
 	void buildLCP()
