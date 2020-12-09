@@ -2,7 +2,6 @@ struct suffixArray
 {
 	int n;
 	vector<int>suffix, c, cnt;
-	vector<pii>tmp;
 	string s;
 
 	suffixArray(string _s)
@@ -11,7 +10,6 @@ struct suffixArray
 		n = s.length() + 1;
 		suffix.resize(n);
 		c.resize(n);
-		tmp.resize(n);
 		cnt.resize(n);
 		build(_s);
 	}
