@@ -22,7 +22,7 @@
 * [Манакер](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/manachers_algo.cpp)
 * [Z функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/z_function.cpp)
 * [Суффиксное дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/SuffixTree.cpp)
-* [Суффиксный массив](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suff_array.cpp)
+* [Суффиксный массив O(n*log(n))](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suffix_array.cpp)
 * [Суффиксный массив O(n*log(n)*log(n))](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suffix_array_log2.cpp)
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/aho_korasik.cpp)
 ## Графы
