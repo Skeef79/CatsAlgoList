@@ -65,7 +65,7 @@ pair<node*, node*> split(node *t, int x)
 		return { res.first,t };
 	}
 }
-//вставляется на позицию x (с нуля), остальное сдвигается вправо
+//вставляется на позицию pos (с нуля), остальное сдвигается вправо
 node* insert(node *t, int pos, ll x)
 {
 	auto res = split(t, pos);
