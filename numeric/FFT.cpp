@@ -1,3 +1,5 @@
+//отсюда потестил только FFT, остальные функции не протесчены, в целом нихуя не протесчено)
+
 struct FFTSolver {
 	using Complex = complex<double>;
 	const double kPi = 4.0 * atan(1.0);
