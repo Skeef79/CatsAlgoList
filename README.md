@@ -38,6 +38,8 @@
 * [Эйлеров путь ориентированный](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path_direct.cpp)
 * [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
+## Матан
+* [FFT](https://github.com/Skeef79/AlgoList2020/blob/main/numeric/FFT.cpp)
 ## Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
