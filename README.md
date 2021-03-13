@@ -16,6 +16,7 @@
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
 * [Функция Эйлера](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/euler_function.cpp)
+* [Расширенный алгоримт Евклида)(https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/extended_gcd.cpp)
 ## Теория игр
 * [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
 ## Строки
