@@ -25,6 +25,6 @@ ll crt(ll a1, ll a2, ll mod1, ll mod2) {
 	
 	ll k1 = (a2 - a1) / g * x1;	
 	ll res = a1 + mod1 * (k1 % mod2);
-
-	return (res + _lcm) % _lcm;
+		
+	return (res % _lcm + _lcm) % _lcm;
 }
