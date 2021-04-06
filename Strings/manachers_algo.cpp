@@ -1,4 +1,4 @@
-vector<int>evenPalindrome(string s) 
+vector<int>oddPalindrome(string s) 
 {
 	int n = s.length();
 	vector<int>d(n);
@@ -15,7 +15,7 @@ vector<int>evenPalindrome(string s)
 	return d;
 }
 
-vector<int>oddPalindrome(string s)
+vector<int>evenPalindrome(string s)
 {
 	int n = s.length();
 	vector<int>d(n);
