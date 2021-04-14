@@ -18,14 +18,19 @@
 #include<time.h>
 #include<bitset>
 #include<random>
+#include <functional>
 #include<unordered_set>
 #include<unordered_map>
-#include<sstream>
 #include<random>
 #include<numeric>
-#include<memory.h>
+#include<chrono>
+#include<sstream>
+#include <valarray> 
+#include<list>
+#include<complex>
+#include<cassert>
 
-//by CatsRuleTheWorld
+//by Skeef79
 
 typedef long long ll;
 typedef long double ld;
@@ -35,67 +40,34 @@ typedef unsigned long long ull;
 #pragma comment(linker, "/STACK:16777216")
 #define pb push_back
 #define en '\n'
-#define for0(i,n) for(int i = 0;i<n;i++)
+#define forn(i,n) for(int i = 0;i<n;i++)
 #define all(x) (x).begin(),(x).end()
 #define rall(x) (x).rbegin(),(x).rend()
 #define vec vector
 #define pii pair<int,int>
 #define pll pair<ll,ll>
-#define SZ(a) int(a.size())
+#define szof(x) int(x.size())
+#define sqr(x) ((x)*(x))
+#define debug(x) cerr<<#x<<" = "<<x<<'\n' 
 
 using namespace std;
 
 const int INF = 1000000000 + 1e8;
-const ll LINF = 1000000000000000000 + 1e17;
+const ll LINF = 2000000000000000000;
 
-template<typename T> void print(vector<T>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-		cout << a[i] << ' ';
-	cout << en;
-}
-
-template<typename T> void print(vector<vector<T>>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-	{
-		for (int j = 0; j < a[i].size(); j++)
-			cout << a[i][j] << ' ';
-		cout << en;
-	}
-}
-
-template <typename T> void input(vector<T>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-		cin >> a[i];
-}
-
-template<typename T> void input(vector<vector<T>>& a)
-{
-	for (int i = 0; i < a.size(); i++)
-		for (int j = 0; j < a[i].size(); j++)
-			cin >> a[i][j];
-
-}
-
-void solve()
-{
+void solve() {
 	
 }
 
-int main()
-{
+int main() {
+	srand(time(0));
 	ios::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
-#ifdef _DEBUG
+#ifdef _DEBUG	
 	freopen("input.txt", "r", stdin);
 #endif
-
-	//freopen("input.txt", "r", stdin);
-	//freopen("output.txt", "w", stdout);
 
 	int tst = 1;
 	//cin >> tst;
