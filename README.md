@@ -30,7 +30,7 @@
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/aho_korasik.cpp)
 ## Графы
 * [Мосты](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/bridges.cpp)
-* [Точки сочлинения](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/cut_points.cpp)
+* [Точки сочленения](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/cut_points.cpp)
 * [Венгерка](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hungarian_algorithm.cpp)
 * [Кун](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/kuhn.cpp)
 * [LCA двоичный подъем](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/lca_binary_lifting.cpp)
