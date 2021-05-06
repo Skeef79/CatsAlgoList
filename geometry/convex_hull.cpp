@@ -1,41 +1,97 @@
-struct pt {
-	double x, y;
+struct point {
+	ll x, y;
+	point(ll _x = 0, ll _y = 0) {
+		x = _x;
+		y = _y;
+	}
+	
+	point operator - (point p) {
+		return point(x - p.x, y - p.y);
+	}
+
+	//dot product(скалярное произведение)
+	ll operator * (point p) {
+		return x * p.x + y * p.y;
+	}
+	
+	//cross product(векторное произведение)
+	ll operator ^ (point p) {
+		return x * p.y - y * p.x;
+	}
+	
+	//значение вектора
+	ll len2() {
+		return 1ll * x * x + 1ll * y * y;
+	}
+
+	bool operator != (point p) {
+		return x != p.x || y != p.y;
+	}
+
+	bool operator == (point p) {
+		return x == p.x && y == p.y;
+	}
 };
 
-bool cmp (pt a, pt b) {
-	return a.x < b.x || a.x == b.x && a.y < b.y;
+
+istream& operator >> (istream &in, point &p) {
+	in >> p.x >> p.y;
+	return in;
 }
 
-bool cw (pt a, pt b, pt c) {
-	return a.x*(b.y-c.y)+b.x*(c.y-a.y)+c.x*(a.y-b.y) < 0;
+ostream& operator << (ostream &out, point& p) {
+	out << p.x << " " << p.y;
+	return out;
 }
 
-bool ccw (pt a, pt b, pt c) {
-	return a.x*(b.y-c.y)+b.x*(c.y-a.y)+c.x*(a.y-b.y) > 0;
+
+//s - самая левая точка из всех и самая нижняя из всех самых левых.
+point s;
+
+bool operator < (point a, point b) {
+	a = a - s;
+	b = b - s;
+	if ((a ^ b) != 0) {
+		return (a ^ b) > 0;
+	}
+	return a.len2() < b.len2();
 }
 
-void convex_hull (vector<pt> & a) {
-	if (a.size() == 1)  return;
-	sort (a.begin(), a.end(), &cmp);
-	pt p1 = a[0],  p2 = a.back();
-	vector<pt> up, down;
-	up.push_back (p1);
-	down.push_back (p1);
-	for (size_t i=1; i<a.size(); ++i) {
-		if (i==a.size()-1 || cw (p1, a[i], p2)) {
-			while (up.size()>=2 && !cw (up[up.size()-2], up[up.size()-1], a[i]))
-				up.pop_back();
-			up.push_back (a[i]);
+// возвращает выпуклую оболочку
+vector<point> Graham(vector<point> p) {
+	int n = p.size();
+
+	//находим самую левую(нижнюю точку)
+	s = p[0];
+	for (int i = 1; i < n; i++) {
+		if (p[i].x < s.x) {
+			s = p[i];
 		}
-		if (i==a.size()-1 || ccw (p1, a[i], p2)) {
-			while (down.size()>=2 && !ccw (down[down.size()-2], down[down.size()-1], a[i]))
-				down.pop_back();
-			down.push_back (a[i]);
+		if (p[i].x == s.x && p[i].y < s.y) {
+			s = p[i];
 		}
 	}
-	a.clear();
-	for (size_t i=0; i<up.size(); ++i)
-		a.push_back (up[i]);
-	for (size_t i=down.size()-2; i>0; --i)
-		a.push_back (down[i]);
+
+	sort(p.begin(), p.end());
+
+	//находим внутреннюю оболочку
+	vector<point> ans;
+
+	ans.push_back(p[0]);
+
+	for (int i = 1; i < n; i++) {
+		while (ans.size() > 1) {
+			int j = ans.size() - 1;
+			point a = ans[j] - ans[j - 1]; // последний вектор, взятый в оболочку
+			point b = p[i] - ans[j]; // текущий вектор
+			if ((a ^ b) <= 0) {
+				ans.pop_back();
+			}
+			else {
+				break;
+			}
+		}
+		ans.push_back(p[i]);
+	}
+	return ans;
 }
