@@ -36,7 +36,7 @@
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
 * [Эйлеров путь (от Димаса)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path(recursive).cpp)
-* [Максимальны поток](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/max_flow.cpp)
+* [Максимальный поток] (https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/dinic.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 ## Матан
 * [FFT](https://github.com/Skeef79/AlgoList2020/blob/main/numeric/FFT.cpp)
