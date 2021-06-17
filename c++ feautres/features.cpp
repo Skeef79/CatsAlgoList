@@ -9,6 +9,7 @@ merge(all(a), all(b), back_inserter(c));
 rotate(a.begin(), a.begin() + m, a.end()); // 1,2,3,4,5 -> 3,4,5,1,2
 rotate(a.rbegin(), a.rbegin() + m, a.rend()); // 1,2,3,4,5 -> 4,5,1,2,3
 
+
 //coordinate compression
 vector<ll>coords;
 //add all possible values
@@ -16,5 +17,9 @@ sort(all(coords));
 coords.resize(unique(all(coords)) - coords.begin());
 
 
-//TODO - add operator overloading for set and hash overloading for unordered_set 
+//set operator overloading (modern C++20 solution by dimasidorenko)
+auto cmp = [](point a, point b) { return a.x < b.x };
+set<point, decltype(cmp)> st(cmp);
 
+
+//TODO add hash overloading for unordered_set 
