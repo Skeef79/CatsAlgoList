@@ -59,7 +59,7 @@ int dfs(int v, int flow) {
 	return 0;
 }
 
-ll max_flow() {
+ll dinic() {
 	ll ans = 0;
 	int f;
 	while (bfs()) {
