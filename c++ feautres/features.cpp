@@ -21,5 +21,16 @@ coords.resize(unique(all(coords)) - coords.begin());
 auto cmp = [](point a, point b) { return a.x < b.x };
 set<point, decltype(cmp)> st(cmp);
 
+//working not only on C++20 by dimas
+struct CMP {
+	bool operator () (int a, int b) const {
+		if (dist[a] != dist[b])
+			return dist[a] < dist[b];
+		return a < b;
+	}
+};
+set<int, CMP> ss;
+
+
 
 //TODO add hash overloading for unordered_set 
