@@ -1,14 +1,12 @@
 const int K = 20;
 
-struct sparceTable
-{
+struct sparceTable {
 	int n;
 	vector<vector<int>>t;
 	vector<int> log;
 	function<int(int, int)> f;
 
-	void build(vector<int>&a)
-	{
+	void build(vector<int>&a) {
 		for (int i = 0; i < n; i++)
 			t[i][0] = a[i];
 
@@ -21,8 +19,7 @@ struct sparceTable
 			log[i] = log[i / 2] + 1;
 	}
 
-	sparceTable(vector<int>&a, function<int(int,int)>_f)
-	{
+	sparceTable(vector<int>&a, function<int(int,int)>_f) {
 		f = _f;
 		n = a.size();
 		t = vector<vector<int>>(n, vector<int>(K));
@@ -30,10 +27,8 @@ struct sparceTable
 		build(a);
 	}
 
-	int get(int l, int r)
-	{
+	int get(int l, int r) {
 		int j = log[r - l + 1];
 		return f(t[l][j], t[r - (1 << j) + 1][j]);
 	}
-
 };
