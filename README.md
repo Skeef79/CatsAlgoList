@@ -11,7 +11,8 @@
 * [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
 ## Геометрия
 * [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
-* [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/convex_hull.cpp)
+* [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/convex_hull.cpp) (Дима)
+* [Выпуклая оболчка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/graham.cpp) (Игорь)
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
 * [Функция Эйлера](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/euler_function.cpp)
