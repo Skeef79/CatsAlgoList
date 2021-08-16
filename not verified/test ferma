@@ -1,0 +1,13 @@
+bool ferma(long long x){
+	if(x == 2)
+		return true;
+	srand(time(NULL));
+	for(int i=0;i<100;i++){
+		long long a = (rand() % (x - 2)) + 2;
+		if (gcd(a, x) != 1)
+			return false;			
+		if( pows(a, x-1, x) != 1)		
+			return false;			
+	}
+	return true;
+}
