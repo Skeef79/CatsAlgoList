@@ -17,7 +17,7 @@ struct Line {
 };
 
 //k-s should be sorted in decreasing order
-struct LineContainer {
+struct Hull {
 	vec<Line> lines;
 	vec<int>idx;
 
