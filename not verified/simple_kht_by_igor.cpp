@@ -33,3 +33,6 @@ struct Hull {
 		return lines[i].get(x);
 	}
 };
+
+//Hull hull;
+//hull.add({0,0}) - иногда помогает инициализировать
