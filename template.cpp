@@ -18,17 +18,14 @@
 #include<time.h>
 #include<bitset>
 #include<random>
-#include <functional>
+#include<functional>
 #include<unordered_set>
 #include<unordered_map>
 #include<random>
 #include<numeric>
-#include<chrono>
 #include<sstream>
-#include <valarray> 
-#include<list>
-#include<complex>
 #include<cassert>
+#include<chrono>
 
 //by Skeef79
 
@@ -47,7 +44,6 @@ typedef unsigned long long ull;
 #define pii pair<int,int>
 #define pll pair<ll,ll>
 #define szof(x) int(x.size())
-#define sqr(x) ((x)*(x))
 #define debug(x) cerr<<#x<<" = "<<x<<'\n' 
 
 using namespace std;
@@ -56,7 +52,7 @@ const int INF = 1000000000 + 1e8;
 const ll LINF = 2000000000000000000;
 
 void solve() {
-	
+
 }
 
 int main() {
@@ -65,7 +61,7 @@ int main() {
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-#ifdef _DEBUG	
+#ifdef _DEBUG
 	freopen("input.txt", "r", stdin);
 #endif
 
