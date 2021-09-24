@@ -1,4 +1,4 @@
-//Находитит такие x и y, что a * x + b * y = gcd(a, b) 
+//Находит такие x и y, что a * x + b * y = gcd(a, b) 
 
 ll gcd(ll a, ll b, ll &x, ll &y)
 {
