@@ -8,6 +8,12 @@ typedef tree<pair<long long, long long>, null_type, less<pair<long long, long lo
 
 //здесь вместо pair<long long, long long> можно писать любой тип (обязательно поменять его в less)
 
+//еще один варианты это через шаблоны:
+template <typename num_t>
+using ordered_set = tree<num_t, null_type, less_equal<num_t>, rb_tree_tag, tree_order_statistics_node_update>;
+//less_equal для мультисета, less для сета
+//тогда можем создавать так: ordered_set<int> st;
+
 ordered_set st;
 
 st.find_by_order(index) //возвращает указатель на элемент с индексом index, если больше то возвращает st.end()
