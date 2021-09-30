@@ -41,7 +41,7 @@
 * [Эйлеров путь (от Димаса)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path(recursive).cpp)
 * [Диниц O(n^2*m)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/dinic.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
-* [Компоненты вершинной связности] (https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
+* [Компоненты вершинной двусвязности](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
 ## Матан
 * [Гаусс](https://github.com/Skeef79/AlgoList2020/blob/main/Math/gauss.cpp)
 * [Тест ферма](https://github.com/Skeef79/AlgoList2020/blob/main/Math/Ferma%20test)
