@@ -1,6 +1,7 @@
 # AlgoList2020
-## Template
+## Templates
 * [Template](https://github.com/Skeef79/AlgoList2020/blob/main/template.cpp)
+* [CLion template](https://github.com/Skeef79/AlgoList2020/blob/main/template_clion.cpp)
 ## Структуры данных
 * [Sparce table](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/sparce_table.cpp)
 * [Sparce table 2D](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/sparce_table2D.cpp)
