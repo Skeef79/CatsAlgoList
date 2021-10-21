@@ -17,11 +17,11 @@ sort(all(coords));
 coords.resize(unique(all(coords)) - coords.begin());
 
 
-//set operator overloading (modern C++20 solution by dimasidorenko)
+//set operator overloading (modern C++17 solution by dimasidorenko)
 auto cmp = [](point a, point b) { return a.x < b.x };
 set<point, decltype(cmp)> st(cmp);
 
-//working not only on C++20 by dimas
+//working not only on C++17 by dimas
 struct CMP {
 	bool operator () (int a, int b) const {
 		if (dist[a] != dist[b])
