@@ -31,7 +31,7 @@ struct CMP {
 };
 set<int, CMP> ss;
 
-//priority_queue comporator (начало очереди находится в конце вектора, нужно сортить соотвественно)
+//priority_queue comporator (начало очереди находится в конце вектора, нужно сортить соответсвенно)
 auto pqCmp = [&](const item x, const item y) {/* тело сравнения */};
 priority_queue<item, vector<item>, decltype(pqCmp)> q(pqCmp);
 
