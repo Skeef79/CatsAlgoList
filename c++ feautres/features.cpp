@@ -32,10 +32,7 @@ struct CMP {
 set<int, CMP> ss;
 
 //priority_queue comporator (знак меньше  значит что на вершине хранится максимальное, то есть они перепутаны местами)
-auto pqCmp = [&](const item x, const item y) {
-		return f(x) < f(y) || f(x) == f(y) && x.lvl < y.lvl;
-	};
-
+auto pqCmp = [&](const item x, const item y) {/* тело сравнения */};
 priority_queue<item, vector<item>, decltype(pqCmp)> q(pqCmp);
 
 //TODO add hash overloading for unordered_set 
