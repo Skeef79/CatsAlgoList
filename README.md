@@ -32,6 +32,7 @@
 * [Суффиксный массив + LCP](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suff_array_with_lcp.cpp)
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/aho_korasik.cpp) (Сеня)
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/igor_aho_corasick.cpp) (Игорь)
+* [Префикс функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/prefix_function.cpp)
 ## Графы
 * [Мосты](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/bridges.cpp)
 * [Точки сочленения](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/cut_points.cpp)
