@@ -31,8 +31,8 @@ struct CMP {
 };
 set<int, CMP> ss;
 
-//priority_queue comporator (знак меньше  значит что на вершине хранится максимальное, то есть они перепутаны местами)
-auto pqCmp = [&](const item x, const item y) {/* тело сравнения */};
+//priority_queue comporator (начало очереди находится в конце вектора, нужно сортить соотвественно)
+auto pqCmp = [&](const item x, const item y) {x < y/* тело сравнения */};
 priority_queue<item, vector<item>, decltype(pqCmp)> q(pqCmp);
 
 //TODO add hash overloading for unordered_set 
