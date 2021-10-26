@@ -1,16 +1,13 @@
-vector<ll> findLIS(vector<ll> a)
-{
+vector<ll> findLIS(vector<ll> a) {
 	int n = a.size();
 	vector<ll> d(n + 1,LINF), pos(n+1,-1), prev(n);
 	int length = 0;
 	d[0] = -LINF;
 	
-	for (int i = 0; i < n; i++)
-	{
+	for (int i = 0; i < n; i++) {
 		int j = upper_bound(d.begin(), d.end(), a[i]) - d.begin();
 
-		if (d[j - 1] < a[i] && a[i] < d[j])
-		{
+		if (d[j - 1] < a[i] && a[i] < d[j]) {
 			d[j] = a[i];
 			pos[j] = i;
 			prev[i] = pos[j - 1];
