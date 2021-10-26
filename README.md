@@ -19,7 +19,7 @@
 * [Функция Эйлера](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/euler_function.cpp)
 * [Расширенный алгоритм Евклида](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/extended_gcd.cpp)
 * [Китайская теорема об остатках](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/Chinese%20Remainder%20Theorem.cpp)
-* [Функция Мебиуса](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/Mobius%20Function)
+* [Функция Мебиуса](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/mobius_function.cpp)
 * [Функция Эйлера 1..n](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/phi_upton.cpp)
 ## Теория игр
 * [Ретро Анализ](https://github.com/Skeef79/AlgoList2020/blob/main/Games/retro_analysis.cpp)
