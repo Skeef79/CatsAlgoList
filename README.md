@@ -45,6 +45,7 @@
 * [Диниц O(n^2*m)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/dinic.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 * [Компоненты вершинной двусвязности](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
+* [Центроидная декомпозиция](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/centroid_decomposition.cpp)
 ## Матан
 * [Гаусс](https://github.com/Skeef79/AlgoList2020/blob/main/Math/gauss.cpp)
 * [Тест ферма](https://github.com/Skeef79/AlgoList2020/blob/main/Math/Ferma%20test)
