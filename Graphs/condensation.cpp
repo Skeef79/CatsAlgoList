@@ -5,8 +5,7 @@ vector<bool>used;
  
 int comp = 0;
  
-void dfs1(int v)
-{
+void dfs1(int v) {
 	used[v] = true;
 	for (auto to : g[v])
 		if (!used[to])
@@ -14,8 +13,7 @@ void dfs1(int v)
 	order.pb(v);
 }
  
-void dfs2(int v)
-{
+void dfs2(int v) {
 	used[v] = true;
 	c[v] = comp;
 	for (auto to : gr[v])
@@ -23,8 +21,7 @@ void dfs2(int v)
 			dfs2(to);
 }
  
-void build_condensation()
-{
+void build_condensation() {
 	fill(all(used), false);
  
 	for (int v = 0; v < g.size(); v++)
