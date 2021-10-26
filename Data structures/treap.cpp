@@ -1,13 +1,11 @@
 
 //x попадает в правое поддерево
-struct node
-{
+struct node {
 	ll x, y;
 	node* left;
 	node* right;
 	int cnt;
-	node(ll _x)
-	{
+	node(ll _x) {
 		x = _x;
 		y = rand()*rand() + rand();
 		left = right = nullptr;
@@ -15,50 +13,42 @@ struct node
 	}
 };
 
-int cnt(node* t)
-{
+int cnt(node* t) {
 	return t ? t->cnt : 0;
 }
 
-void update(node* t)
-{
+void update(node* t) {
 	if (t)
 		t->cnt = 1 + cnt(t->left) + cnt(t->right);
 }
 
-node* merge(node * L, node* R)
-{
+node* merge(node * L, node* R) {
 	if (!L)
 		return R;
 	if (!R)
 		return L;
-	if (L->y > R->y)
-	{
+	if (L->y > R->y) {
 		L->right = merge(L->right, R);
 		update(L);
 		return L;
 	}
-	else
-	{
+	else {
 		R->left = merge(L, R->left);
 		update(R);
 		return R;
 	}
 }
 
-pair<node*, node*> split(node *t, ll x)
-{
+pair<node*, node*> split(node *t, ll x) {
 	if (!t)
 		return { nullptr, nullptr };
-	if (x > t->x)
-	{
+	if (x > t->x) {
 		auto res = split(t->right, x);
 		t->right = res.first;
 		update(t);
 		return { t,res.second };
 	}
-	else
-	{
+	else {
 		auto res = split(t->left, x);
 		t->left = res.second;
 		update(t);
@@ -66,8 +56,7 @@ pair<node*, node*> split(node *t, ll x)
 	}
 }
 
-bool exist(node* t, ll  x)
-{
+bool exist(node* t, ll  x) {
 	if (!t)
 		return false;
 	if (x == t->x)
@@ -78,8 +67,7 @@ bool exist(node* t, ll  x)
 		return exist(t->left, x);
 }
 
-node* insert(node* t, ll x)
-{
+node* insert(node* t, ll x) {
 	if (exist(t, x))
 		return t;
 
@@ -87,8 +75,7 @@ node* insert(node* t, ll x)
 	return merge(merge(res.first, new node(x)), res.second);
 }
 
-node* erase(node *t, ll x)
-{
+node* erase(node *t, ll x) {
 	if (!exist(t, x))
 		return t;
 	auto res = split(t, x);
@@ -96,8 +83,7 @@ node* erase(node *t, ll x)
 }
 
 //k - с нуля
-ll kth(node *t, int k)
-{
+ll kth(node *t, int k) {
 	if (!t)
 		return bad;
 	if (k == cnt(t->left))
