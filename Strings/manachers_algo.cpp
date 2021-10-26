@@ -1,9 +1,7 @@
-vector<int>oddPalindrome(string s) 
-{
+vector<int>oddPalindrome(string s)  {
 	int n = s.length();
 	vector<int>d(n);
-	for (int i = 1, l = 0, r = 0; i < n; i++)
-	{
+	for (int i = 1, l = 0, r = 0; i < n; i++) {
 		if (i <= r)
 			d[i] = min(r - i + 1, d[l + r - i]);
 		while (i + d[i] < n && i - d[i] >= 0 && s[i + d[i]] == s[i - d[i]])
@@ -15,12 +13,10 @@ vector<int>oddPalindrome(string s)
 	return d;
 }
 
-vector<int>evenPalindrome(string s)
-{
+vector<int>evenPalindrome(string s) {
 	int n = s.length();
 	vector<int>d(n);
-	for (int i = 1, l = 0, r = 0; i < n; i++)
-	{
+	for (int i = 1, l = 0, r = 0; i < n; i++) {
 		if (i <= r)
 			d[i] = min(r - i + 1, d[l + r - i + 1]);
 
