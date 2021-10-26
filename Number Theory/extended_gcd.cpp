@@ -1,9 +1,7 @@
 //Находит такие x и y, что a * x + b * y = gcd(a, b) 
 
-ll gcd(ll a, ll b, ll &x, ll &y)
-{
-	if (b == 0)
-	{
+ll gcd(ll a, ll b, ll &x, ll &y) {
+	if (b == 0) {
 		x = 1;
 		y = 0;
 		return a;
