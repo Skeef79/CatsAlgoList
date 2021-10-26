@@ -1,9 +1,7 @@
-vector<int> zf(string s)
-{
+vector<int> zf(string s) {
 	int n = s.length();
 	vector<int>z(n);
-	for (int i = 1, l = 0, r = 0; i < n; i++)
-	{
+	for (int i = 1, l = 0, r = 0; i < n; i++) {
 		if (i <= r)
 			z[i] = min(r - i + 1, z[i - l]);
 
