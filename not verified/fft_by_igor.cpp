@@ -1,13 +1,16 @@
 struct cd {
 	double a, b;
 	cd(double a = 0, double b = 0) : a(a), b(b) {}
-	const cd operator + (const cd &c) const {
+	const cd operator + (const cd &c) const
+	{
 		return cd(a + c.a, b + c.b);
 	}
-	const cd operator - (const cd &c) const {
+	const cd operator - (const cd &c) const
+	{
 		return cd(a - c.a, b - c.b);
 	}
-	const cd operator * (const cd &c) const {
+	const cd operator * (const cd &c) const
+	{
 		return cd(a * c.a - b * c.b, a * c.b + b * c.a);
 	}
 };
@@ -72,10 +75,9 @@ vec<ll> mult(vec<ll> a, vec<ll> b) {
 
 	fft(ta, logn, 1);
 
-	vec<ll>ans(n);
-	for (int i = 0; i < n; i++)
+	int sz = szof(a) + szof(b) - 1;
+	vec<ll>ans(sz);
+	for (int i = 0; i < sz; i++)
 		ans[i] = round(ta[i].a);
 	return ans;
 }
-
-//precalcW()
