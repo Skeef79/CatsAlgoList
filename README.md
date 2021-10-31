@@ -10,6 +10,7 @@
 * [Декартово дерево](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap.cpp)
 * [Декартово дерево по неявному ключу](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/treap_implicit.cpp)
 * [HLD](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/hld.cpp)
+* [СНМ с откатами](https://github.com/Skeef79/AlgoList2020/blob/main/Data%20structures/dsu_with_rollbacks.cpp)
 ## Геометрия
 * [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
 * [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/convex_hull.cpp) (Дима)
