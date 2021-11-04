@@ -1,16 +1,13 @@
 struct cd {
 	double a, b;
 	cd(double a = 0, double b = 0) : a(a), b(b) {}
-	const cd operator + (const cd &c) const
-	{
+	const cd operator + (const cd &c) const {
 		return cd(a + c.a, b + c.b);
 	}
-	const cd operator - (const cd &c) const
-	{
+	const cd operator - (const cd &c) const {
 		return cd(a - c.a, b - c.b);
 	}
-	const cd operator * (const cd &c) const
-	{
+	const cd operator * (const cd &c) const {
 		return cd(a * c.a - b * c.b, a * c.b + b * c.a);
 	}
 };
