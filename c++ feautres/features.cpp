@@ -35,4 +35,6 @@ set<int, CMP> ss;
 auto pqCmp = [&](const item x, const item y) {/* тело сравнения */};
 priority_queue<item, vector<item>, decltype(pqCmp)> q(pqCmp);
 
+//comporator for upper_bound - аргументы в другом порядке (значение по которому ищем, значение из массива)
+
 //TODO add hash overloading for unordered_set 
