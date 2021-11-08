@@ -50,8 +50,10 @@ void fft(cd* a, int logn, bool inv = 0) {
 	}
 
 	if (inv) {
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i < n; i++) {
 			a[i].a /= n;
+			a[i].b /= n;	
+		}
 		reverse(a + 1, a + n);
 	}
 }
