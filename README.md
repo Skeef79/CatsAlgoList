@@ -58,3 +58,5 @@
 * [Перебор всех подмасок и надмасок](https://github.com/Skeef79/AlgoList2020/blob/main/Other/iterate_submasks.cpp)
 * [Длинка](https://github.com/Skeef79/AlgoList2020/blob/main/Other/dlinka.cpp)
 * [Полезные фичи С++](https://github.com/Skeef79/AlgoList2020/blob/main/c%2B%2B%20feautres/features.cpp)
+## Прочие алголисты
+* [Some guy from cf](https://github.com/ShahjalalShohag/code-library)
