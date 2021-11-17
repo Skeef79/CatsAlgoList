@@ -20,11 +20,15 @@ bool dfs(int v) {
 int kuhn() {
 	fill(all(r),-1);
 	int ans = 0;
+	fill(all(used),false);
+	
 	for (int v = 0; v < n; v++) {
-		fill(all(used), false);
-		if (dfs(v))
-			ans++;
+		if (dfs(v)) {
+			fill(all(used), false);
+			ans++;	
+		}
 	}
+	
 	return ans;
 }
 
