@@ -40,3 +40,11 @@ node query(int l, int r) {
 	}
 	return combine(ansl, ansr);
 }
+
+void modify(int pos, int value) {
+	pos += N;
+	t[pos] = value;
+	for (; pos > 1; pos >>= 1) {
+		t[pos >> 1] = combine(t[pos], t[pos ^ 1]);
+	}
+}
