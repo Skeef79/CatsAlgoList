@@ -20,7 +20,7 @@ public:
     
     TCoord operator%(const Point &p) const { return x * p.y - y * p.x; }
     TCoord operator*(const Point &p) const { return x * p.x + y * p.y; }
-    
+   
     
     bool operator!=(const Point &p) const { return fabsl(x - p.x) > EPS || fabsl(y - p.y) > EPS; }
     bool operator==(const Point &p) const { return fabsl(x - p.x) < EPS && fabsl(y - p.y) < EPS; }
@@ -42,6 +42,7 @@ public:
     }
 };
  
+
 class Line {
 public:
     ld a, b, c;
