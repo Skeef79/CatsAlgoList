@@ -53,7 +53,7 @@
 * [XOR базис](https://github.com/Skeef79/AlgoList2020/blob/main/Math/xor_basis.cpp)
 * [FFT](https://github.com/Skeef79/AlgoList2020/blob/main/Math/FFT.cpp)
 * [NTT](https://github.com/Skeef79/AlgoList2020/blob/main/Math/NTT.cpp)
-* [XOR transform](https://github.com/Skeef79/AlgoList2020/blob/main/Math/xor_transform.cpp)
+* [FWHT (для xor свертки)](https://github.com/Skeef79/AlgoList2020/blob/main/Math/xor_transform.cpp)
 ## Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
