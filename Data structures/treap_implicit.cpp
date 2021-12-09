@@ -3,8 +3,7 @@ struct node {
 	node* left;
 	node * right;
 	int cnt;
-	node(ll _x)
-	{
+	node(ll _x) {
 		x = _x;
 		y = rand()*rand() + rand();
 		left = right = nullptr;
