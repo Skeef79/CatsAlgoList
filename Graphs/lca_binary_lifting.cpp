@@ -1,7 +1,7 @@
 const int LOG = 20;
-vec<int>lvl, tin, tout;
-vec<vec<int>>g;
-vec<vec<int>>jump;
+vector<int>lvl, tin, tout;
+vector<vector<int>>g;
+vector<vector<int>>jump;
 
 int timer = 0;
 
@@ -37,3 +37,5 @@ int lca(int u, int v) {
 
 	return jump[v][0];
 }
+//need to use dfs at th beginning
+
