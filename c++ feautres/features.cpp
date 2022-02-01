@@ -6,8 +6,8 @@ merge(all(a), all(b), back_inserter(c));
 
 //#include<algorithm>
 //cycle shift, elements a[m...n-1] become first
-rotate(a.begin(), a.begin() + m, a.end()); // 1,2,3,4,5 -> 3,4,5,1,2
-rotate(a.rbegin(), a.rbegin() + m, a.rend()); // 1,2,3,4,5 -> 4,5,1,2,3
+rotate(a.begin(), a.begin() + 3, a.end()); // 1,2,3,4,5 -> 3,4,5,1,2
+rotate(a.rbegin(), a.rbegin() + 3, a.rend()); // 1,2,3,4,5 -> 4,5,1,2,3
 
 
 //coordinate compression
