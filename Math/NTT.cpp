@@ -1,17 +1,8 @@
 const ll mod = 998244353;
-const ll root = 805775211;
+ll root = 3;
 
 const int LOG = 19;
 const int N = (1 << LOG);
-
-ll w[N];
-ll ta[N], tb[N];
-void precalcW() {
-	w[0] = 1;
-	for (int i = 1; i < N; i++) {
-		w[i] = (w[i - 1] * root) % mod;
-	}
-}
 
 ll binpow(ll x, ll n) {
 	ll p = 1;
@@ -22,6 +13,18 @@ ll binpow(ll x, ll n) {
 		x = (x*x) % mod;
 	}
 	return p;
+}
+
+
+ll w[N];
+ll ta[N], tb[N];
+void precalcW() {
+	root = binpow(root, (mod - 1) / (1 << LOG));
+
+	w[0] = 1;
+	for (int i = 1; i < N; i++) {
+		w[i] = (w[i - 1] * root) % mod;
+	}
 }
 
 void fft(ll* a, int logn, bool inv = 0) {
@@ -79,5 +82,3 @@ vec<ll> mult(vec<ll> a, vec<ll> b) {
 		ans[i] = ta[i];
 	return ans;
 }
-
-//precalcW()
