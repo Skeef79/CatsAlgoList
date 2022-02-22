@@ -43,6 +43,7 @@
 * [Центр дерева](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/tree_center.cpp)
 * [Конденсация графа](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/condensation.cpp)
 * [Эйлеров путь (от Димаса)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_path(recursive).cpp)
+* [Эйлеров цикл в неориентированном графе](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/euler_cycle_undirected.cpp)
 * [Диниц O(n^2*m)](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/dinic.cpp)
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 * [Компоненты вершинной двусвязности](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
