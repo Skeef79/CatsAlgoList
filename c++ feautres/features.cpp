@@ -2,13 +2,15 @@
 //#include<algorithm>
 // merge a and b into c 
 merge(all(a), all(b), back_inserter(c));
-
+merge(all(a),all(b), c.begin());
 
 //#include<algorithm>
-//cycle shift, elements a[m...n-1] become first
-rotate(a.begin(), a.begin() + 3, a.end()); // 1,2,3,4,5 -> 3,4,5,1,2
-rotate(a.rbegin(), a.rbegin() + 3, a.rend()); // 1,2,3,4,5 -> 4,5,1,2,3
+//cycle shift
 
+//left cycle shift, elements [0,i) goes back
+rotate(a.begin(), a.begin() + 2, a.end()); // 1,2,3,4,5 -> 3,4,5,1,2
+//right cycle shift, k elements from back goes to the front
+rotate(a.rbegin(), a.rbegin() + 2, a.rend()); // 1,2,3,4,5 -> 4,5,1,2,3
 
 //coordinate compression
 vector<ll>coords;
