@@ -1,15 +1,13 @@
 struct vertex {
 	map<char, int>next;
 	map<char, int>go;
-	int link, p;
+	int link, termLink, p;
 	char pch;
 	bool term;
-	vertex(int p, char pch) :p(p), pch(pch), term(false), link(-1) {}
+	vertex(int p, char pch) :p(p), pch(pch), term(false), link(-1), termLink(-1) {}
 };
 
-const int N = 1e5 + 1010;
 vector<vertex>t;
-bool done[N];
 
 void addString(string &s) {
 	int v = 0;
