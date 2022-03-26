@@ -37,5 +37,5 @@ int lca(int u, int v) {
 
 	return jump[v][0];
 }
-//need to use dfs at th beginning
+//need to use dfs at the beginning
 
