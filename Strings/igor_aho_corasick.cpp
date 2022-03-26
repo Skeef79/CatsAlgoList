@@ -40,4 +40,18 @@ int go(int v, char c) {
 	return t[v].go[c];
 }
 
+//ссылка на ближайшую терминальную вершину
+int getTermLink(int v) {
+	if (t[v].termLink != -1)
+		return t[v].termLink;
+
+	int u = getLink(v);
+	if (u == 0)
+		t[v].termLink = 0;
+	else
+		t[v].termLink = (t[u].term ? u : getTermLink(u));
+
+	return t[v].termLink;
+}
+
 //t.emplace_back(0,0);
