@@ -48,6 +48,7 @@
 * [Нахождение циклов отрицательного веса](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/negative_cycles.cpp)
 * [Компоненты вершинной двусвязности](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
 * [Центроидная декомпозиция](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/centroid_decomposition.cpp)
+* [2-SAT](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/two_sat.cpp)
 ## Матан
 * [Гаусс](https://github.com/Skeef79/AlgoList2020/blob/main/Math/gauss.cpp)
 * [Тест ферма](https://github.com/Skeef79/AlgoList2020/blob/main/Math/Ferma%20test)
