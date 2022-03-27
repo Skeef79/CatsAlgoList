@@ -98,3 +98,6 @@ struct twoSat {
 		return true;
 	}
 };
+
+//twoSat sat(n);
+// sat.add_or(x,0,y,1) добавляет условие (x or !y)
