@@ -1,3 +1,12 @@
+/*
+Проверенно на:
+https://codeforces.com/contest/228/problem/E
+https://codeforces.com/contest/27/problem/D
+https://codeforces.com/contest/1475/problem/F
+https://codeforces.com/contest/776/problem/D
+https://codeforces.com/contest/468/problem/B
+*/
+
 struct twoSat {
 	int n; //кол-во переменных
 
