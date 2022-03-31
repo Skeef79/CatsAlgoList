@@ -61,3 +61,5 @@ public:
         return Point((b * l.c - c * l.b) / denom, (c * l.a - a * l.c) / denom);
     }
 };
+
+//Формула Пика: Площадь = ВНУТРИ + (ГРАНИЦА / 2) - 1
