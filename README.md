@@ -14,8 +14,7 @@
 ## Геометрия
 * [Шаблон](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/template.cpp)
 * [Шаблон от Димы](https://github.com/Skeef79/AlgoList2020/blob/main/not%20verified/geometry_template.cpp)
-* [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/convex_hull.cpp) (Дима)
-* [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/graham.cpp) (Игорь)
+* [Выпуклая оболочка](https://github.com/Skeef79/AlgoList2020/blob/main/geometry/graham.cpp)
 ## Теория чисел
 * [Треугольник паскаля](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/pascal_triangle.cpp)
 * [Функция Эйлера](https://github.com/Skeef79/AlgoList2020/blob/main/Number%20Theory/euler_function.cpp)
