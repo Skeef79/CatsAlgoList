@@ -37,7 +37,6 @@ typedef unsigned long long ull;
 #pragma comment(linker, "/STACK:16777216")
 #define pb push_back
 #define en '\n'
-#define forn(i,n) for(int i = 0;i<n;i++)
 #define all(x) (x).begin(),(x).end()
 #define rall(x) (x).rbegin(),(x).rend()
 #define vec vector
