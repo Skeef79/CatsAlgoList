@@ -32,6 +32,7 @@
 * [Суффиксный массив O(n*log(n))](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suffix_array.cpp)
 * [Суффиксный массив O(n*log(n)*log(n))](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suffix_array_log2.cpp)
 * [Суффиксный массив + LCP](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/suff_array_with_lcp.cpp)
+* [Быстрый Суфмасс + LCP](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/fast_suff_array.cpp)
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/aho_korasik.cpp) (Сеня)
 * [Ахо Корасик](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/igor_aho_corasick.cpp) (Игорь)
 * [Префикс функция](https://github.com/Skeef79/AlgoList2020/blob/main/Strings/prefix_function.cpp)
