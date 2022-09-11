@@ -36,7 +36,6 @@ public:
     }
 };
  
- 
 class Line {
 public:
     ld a, b, c;
@@ -55,5 +54,20 @@ public:
         return Point((b * l.c - c * l.b) / denom, (c * l.a - a * l.c) / denom);
     }
 };
+
+ld getAngle(ld x, ld y) {
+	ld angle = atan2(y, x);
+	return angle < 0 ? angle + 2 * M_PI : angle;
+}
+ 
+ 
+ld getAngle(Point a, Point b) {
+	auto angle = abs(getAngle(a.x, a.y) - getAngle(b.x, b.y));
+	if (angle > M_PI) {
+		angle = 2 * M_PI - angle;
+	}
+ 
+	return angle;
+}
 
 //Формула Пика: Площадь = ВНУТРИ + (ГРАНИЦА / 2) - 1
