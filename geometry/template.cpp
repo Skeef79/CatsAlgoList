@@ -63,10 +63,7 @@ ld getAngle(ld x, ld y) {
  
 ld getAngle(Point a, Point b) {
 	auto angle = abs(getAngle(a.x, a.y) - getAngle(b.x, b.y));
-	if (angle > M_PI) {
-		angle = 2 * M_PI - angle;
-	}
- 
+	if (angle > M_PI) { angle = 2 * M_PI - angle;}
 	return angle;
 }
 
