@@ -1,3 +1,4 @@
+//THIS SEGMENT TREE ON [l,r)
 struct node {
 	int len;
 	int open_b, closed_b;
