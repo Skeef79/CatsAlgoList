@@ -1,6 +1,6 @@
 // find the smallest value
 const ld phi = (1 + sqrt(5)) / 2;
-ld resphi = 2 - phi;
+const ld resphi = 2 - phi;
 ld l = -border, r = border;
 {
     ld m1 = l + resphi * (r - l), m2 = r - resphi * (r - l);
