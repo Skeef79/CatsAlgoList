@@ -26,7 +26,8 @@
 #include<cassert>
 #include<chrono>
 
-//by Skeef79
+#pragma GCC optimize("Ofast")
+#pragma GCC optimize("O3")
 
 typedef long long ll;
 typedef long double ld;
