@@ -60,6 +60,9 @@
 * [FFT](https://github.com/Skeef79/AlgoList2020/blob/main/Math/FFT.cpp)
 * [NTT](https://github.com/Skeef79/AlgoList2020/blob/main/Math/NTT.cpp)
 * [FWHT (для xor свертки)](https://github.com/Skeef79/AlgoList2020/blob/main/Math/xor_transform.cpp)
+* [Тернарный поиск золотым сечением](https://github.com/Skeef79/AlgoList2020/blob/main/Math/GoldenSectionSearch.cpp)
+
+
 ## Разное
 * [НВП](https://github.com/Skeef79/AlgoList2020/blob/main/Other/LIS.cpp)
 * [Gosper's Hack](https://github.com/Skeef79/AlgoList2020/blob/main/Other/gospers_hack.cpp)
