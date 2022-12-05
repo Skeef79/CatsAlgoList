@@ -21,8 +21,7 @@ vector<point> intersectLineCircle(ld rad1, const Line& l) {
  
 vector<point> intersectCircleCircle(point middle1, ld rad1, point middle2, ld rad2) {
     if (middle1 == middle2 && abs(rad1 - rad2) < EPS) {
-        return {
-        };
+        return {};
     }
  
     ld shift_x = middle1.x;
