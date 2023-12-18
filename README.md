@@ -53,6 +53,7 @@
 * [Компоненты вершинной двусвязности](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/biconnected_comps.cpp)
 * [Центроидная декомпозиция](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/centroid_decomposition.cpp)
 * [2-SAT](https://github.com/Skeef79/AlgoList2020/blob/main/Graphs/two_sat.cpp)
+* [Min Cost Max Flow](https://github.com/Skeef79/CatsAlgoList/blob/main/Graphs/min_cost_max_flow.cpp)
 ## Матан
 * [Гаусс](https://github.com/Skeef79/AlgoList2020/blob/main/Math/gauss.cpp)
 * [Тест ферма](https://github.com/Skeef79/AlgoList2020/blob/main/Math/Ferma%20test)
