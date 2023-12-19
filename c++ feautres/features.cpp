@@ -40,3 +40,7 @@ priority_queue<item, vector<item>, decltype(pqCmp)> q(pqCmp);
 //comporator for upper_bound - аргументы в другом порядке (значение по которому ищем, значение из массива)
 
 //TODO add hash overloading for unordered_set 
+
+//random
+std::mt19937_64 rng(std::chrono::steady_clock::now().time_since_epoch().count());
+
